@@ -1,0 +1,31 @@
+page-home {
+  .item {
+    display: inline-block;
+    width: 100%;
+    .label {
+      display: table;
+      width: 100%;
+    }
+    .life-score,
+    .counter {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .counter {
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      border: 1px solid #000;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%;
+    }
+    .life-score {
+      width: -webkit-calc(100% - 50px);
+      width:    -moz-calc(100% - 50px);
+      width:     -ms-calc(100% - 50px);
+      width:         calc(100% - 50px);
+    }
+  }
+}

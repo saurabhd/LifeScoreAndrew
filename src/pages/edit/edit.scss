@@ -1,0 +1,19 @@
+page-edit {
+  .life-score-wrap {
+    width: 100%;
+    .counter {
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #000;
+      -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+              border-radius: 10px;
+    }
+    .life-score,
+    .counter {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+
+<ion-header >
+
+  <ion-navbar color="dark">
+    <ion-title>Life Score</ion-title>
+    <ion-buttons start>
+      <button ion-button clear (click)="openPage()"> Back</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+<ion-list>
+  <ion-item *ngFor="let i of RangeData;let idx = index ">
+    <ion-label class="life-score-wrap">
+      <div class="counter">{{i.data}}</div>
+      <div class="life-score">{{i.name}}</div>
+    </ion-label>
+    <ion-range  min="{{i.min}}" max="{{i.max}}" [(ngModel)]="i.data" color="dark" (ionChange)="updateResults();">
+       <ion-label range-left>0</ion-label>
+       <ion-label range-right>10</ion-label>
+     </ion-range>
+  </ion-item>
+</ion-list>
+   <ion-fab right bottom>
+     <button ion-fab color="dark" (click)="add()">  <ion-icon name="add"></ion-icon></button>
+   </ion-fab>
+</ion-content>
